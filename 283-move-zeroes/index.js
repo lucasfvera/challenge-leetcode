@@ -1,7 +1,7 @@
 /**
  Do not return anything, modify nums in-place instead.
  */
-function moveZeroes(nums) {
+export function moveZeroes(nums) {
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] === 0) {
             for (let j = i + 1; j < nums.length; j++) {
@@ -15,7 +15,7 @@ function moveZeroes(nums) {
     }
 }
 ;
-function moveZeroesOptimized(nums) {
+export function moveZeroesOptimized(nums) {
     let zeroPosition;
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] === 0 && zeroPosition === undefined) {

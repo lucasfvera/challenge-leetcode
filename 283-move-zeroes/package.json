@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "play": "tsc && node index.js",
+        "debug": "tsc && node --inspect-brk index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
